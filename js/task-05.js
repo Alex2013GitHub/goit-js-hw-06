@@ -6,4 +6,5 @@ userName.addEventListener('input', onInput);
 function onInput(event) {
   userNameOutput.textContent =
     event.currentTarget.value === '' ? 'Anonymous' : event.currentTarget.value;
+
 }
