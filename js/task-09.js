@@ -6,14 +6,15 @@ function getRandomHexColor() {
 
 const refs = {
   bodyEl: document.querySelector('body'),
-  buttonEl: document.querySelector('.change-color'),
-  bgColorEl: document.querySelector('.color'),
+  btnEl: document.querySelector('.change-color'),
+  bgColor: document.querySelector('.color'),
 };
 
-refs.buttonEl.addEventListener('click', onChangeColor);
+refs.btnEl.addEventListener('click', onClick);
 
-function onChangeColor() {
-  const onHexChangeColor = getRandomHexColor();
-  refs.bodyEl.style.backgroundColor = onHexChangeColor;
-  refs.bgColorEl.textContent = onHexChangeColor;
+function onClick() {
+  const onHexChangecolor = getRandomHexColor();
+  refs.bgColor.textContent = onHexChangecolor;
+  refs.bodyEl.style.backgroundColor = onHexChangecolor;
+  console.log(onHexChangecolor);
 }
