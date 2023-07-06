@@ -23,4 +23,3 @@ const markyp = images
   .join('');
 
 containerGallery.insertAdjacentHTML('beforeend', markyp);
-console.dir(containerGallery);

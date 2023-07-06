@@ -22,8 +22,6 @@ function createBoxes() {
     boxes.push(boxItem);
   }
   boxesContainer.append(...boxes);
-
-  console.log(amount);
 }
 
 function destroyBoxes() {
